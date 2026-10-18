@@ -1,0 +1,18 @@
+=== PRODUCTOS INICIALES ===
+Nombre: Cuaderno
+Precio: $35.50
+Stock: 20 unidades
+
+Nombre: Bolígrafo
+Precio: $12.00
+Stock: 50 unidades
+
+=== PRODUCTOS ACTUALIZADOS ===
+Nombre: Cuaderno
+Precio: $35.50
+Stock: 15 unidades
+
+Nombre: Bolígrafo
+Precio: $12.00
+Stock: 60 unidades
+

@@ -1,0 +1,65 @@
+Sesión real del depurador Java JDB
+Punto de interrupción: asignación this.stock = nuevoStock
+Initializing jdb ...
+> 
+COMANDO: stop at Producto:60
+Deferring breakpoint Producto:60.
+It will be set after the class is loaded.
+> 
+COMANDO: run
+run Producto
+Set uncaught java.lang.Throwable
+Set deferred uncaught java.lang.Throwable
+> 
+VM Started: Set deferred breakpoint Producto:60
+=== PRODUCTOS INICIALES ===
+Nombre: Cuaderno
+Precio: $35.50
+Stock: 20 unidades
+
+Nombre: Bolígrafo
+Precio: $12.00
+Stock: 50 unidades
+
+
+Breakpoint hit: "thread=main", Producto.actualizarStock(), line=60 bci=14
+60            this.stock = nuevoStock;
+
+main[1] 
+COMANDO: print this.stock
+ this.stock = 20
+main[1] 
+COMANDO: print nuevoStock
+ nuevoStock = 15
+main[1] 
+COMANDO: next
+> 
+Step completed: "thread=main", Producto.actualizarStock(), line=61 bci=19
+61        }
+
+main[1] 
+COMANDO: print this.stock
+ this.stock = 15
+main[1] 
+COMANDO: cont
+> 
+Breakpoint hit: "thread=main", Producto.actualizarStock(), line=60 bci=14
+60            this.stock = nuevoStock;
+
+main[1] 
+COMANDO: print this.stock
+ this.stock = 50
+main[1] 
+COMANDO: print nuevoStock
+ nuevoStock = 60
+main[1] 
+COMANDO: next
+> 
+Step completed: "thread=main", Producto.actualizarStock(), line=61 bci=19
+61        }
+
+main[1] 
+COMANDO: print this.stock
+ this.stock = 60
+main[1] 
+COMANDO: exit

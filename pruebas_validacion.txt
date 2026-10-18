@@ -1,0 +1,14 @@
+Entorno de verificación: OpenJDK 17
+
+CORRECTO | Constructor e información de Cuaderno: 35.50 y 20
+CORRECTO | Constructor e información de Bolígrafo: 12.00 y 50
+CORRECTO | Actualizar Cuaderno a 15 sustituye su stock
+CORRECTO | Actualizar Cuaderno no cambia el stock de Bolígrafo
+CORRECTO | Actualizar Bolígrafo a 60 sustituye su stock
+CORRECTO | Constructor rechaza precio negativo
+CORRECTO | Constructor rechaza stock negativo
+CORRECTO | Método rechaza nuevo stock negativo
+CORRECTO | Rechazar stock negativo conserva el valor anterior de 15
+CORRECTO | Stock igual a cero es válido
+CORRECTO | Constructor acepta precio y stock iguales a cero
+TOTAL: 11 pruebas correctas; 0 fallos.
